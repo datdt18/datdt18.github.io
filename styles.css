@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+.clear{
+    clear: both;
+}
+#nav {
+    margin: 0;
+    display: inline-block;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul #nav {
+    height: 100px;
+}
+
+#header {
+    background-color: black;
+    height: 46px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#header>ul>li {
+    display: inline-block;
+}
+
+
+#nav>li>a {
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+    font-size: larger;
+    padding: 0 24px;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    height: 46px;
+}
+
+
+#nav>li:hover>a {
+    background-color: #ccc;
+    color: black;
+    height: 46px;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+.subnav {
+    position: absolute;
+    background-color: #fff;
+    font-size: larger;
+    display: none;
+    min-width: 160px;
+}
+
+.subnav ul {
+    padding-inline-start: 0px;
+    margin-top: 100px;
+}
+
+.subnav li a {
+    text-decoration: none;
+    padding: 0 12px;
+    color: black;
+    display: block;
+    line-height: 46px;
+    list-style-type: none;
+    height: 46px;
+
+}
+
+.subnav {
+    list-style-type: none;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li:hover {
+
+    background-color: #ccc;
+}
+
+#header .search-button {
+    padding: 0px 23px;
+    height: 46px;
+    margin-right: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+}
+
+.search-button a i {
+    color: white;
+    line-height: 46px;
+    font-size: 20px;
+}
+
+#sliders {
+    padding-top: 50%;
+    width: 100%;
+    background: url('/img/slider/chicago.jpg') top center / cover no-repeat;
+    margin-top: 46px;
+    position: relative;
+}
+
+.text-content {
+    position: absolute;
+    text-align: center;
+    bottom: 47px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-content>h2 {
+    text-transform: uppercase;
+
+}
+
+.text-content>h4 {
+    margin-top: 26px;
+}
+
+#content {
+    width: 800px;
+    padding-top: 64px;
+padding-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.content-section .section-heading,
+.section-sub-heading {
+    text-align: center !important;
+
+}
+
+.section-heading {
+    margin: 10px 0px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
+
+}
+
+.section-sub-heading {
+    font-style: italic;
+    margin: 15px 0px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.about-text {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0px;
+    text-align: justify;
+}
+
+.members-list {
+    padding:32px 0px;
+
+}
+#content .member-item{
+    width: calc(100%/3);
+    text-align: center;
+    float: left;
+
+}
+.members-list .member-name {
+    margin: 15px 0px;
+    font-size: 15px;
+
+}
+.members-list img{
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+#tour-date{
+    background-color: black;
+    color: white;
+   
+   
+}
+.tour-content{
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 16px;
+}
+.tour-section-heading{
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center;
+}
+#tour-date .tour-section-sub-heading{
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    margin: 15px;
+
+}
+.month-list{
+    margin:16px;
+    background-color: #fff;
+    color: black;
+    border: 1;
+}
+.month-list .month-item{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.month-list .soldout{
+    margin-left: 16px;
+    background-color: #f44336;
+    color: white;
+    padding: 0px 8px ;
+    height: 22px;
+}
+.month-list .quantity{
+    float: right;
+    margin-left: 16px;
+    padding: 0px 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
