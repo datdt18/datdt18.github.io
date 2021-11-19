@@ -38,7 +38,7 @@
   
   .dashboard {
     padding: 16px 16px 14px;
-    background-color: #fff;
+    background-image: linear-gradient(#f6c0c0, #fff3fd);
     position: fixed;
     top: 0;
     width: 100%;
@@ -148,6 +148,8 @@
   .playlist {
     margin-top: 408px;
     padding: 12px;
+    background-image: linear-gradient(#f3f3f3, #f6c0c0);
+
   }
   
   .song {
